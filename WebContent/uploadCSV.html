@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Upload CSV File to convert</title>
+</head>
+<body>
+	<h4>File Upload:</h4>
+	Select CSV file to upload:
+	<br />
+	<form action="UploadServlet" method="post"
+		enctype="multipart/form-data">
+		<input type="file" name="file" size="50" /> <br /> 
+		Select output format: <br /> 
+		<select name="reportFormat">
+			<option value="xls">.XLS</option>
+			<option value="xlsx">.XLSX</option>
+			<option value="pdf">.PDF</option>
+		</select> <br /> <input type="submit" value="Convert" />
+	</form>
+</body>
+</html>
