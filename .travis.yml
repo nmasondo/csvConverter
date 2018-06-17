@@ -1,10 +1,1 @@
 language: java
-
-addons:
-  sonarcloud:
-    organization: "nmasondo-github"
-    token:
-      secure: "$SONAR_TOKEN"
-
-script:
-  - sonar-scanner
