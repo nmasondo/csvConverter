@@ -1,1 +1,8 @@
 language: java
+
+addons:
+  sonarcloud:
+    organization: "nmasondo-github"
+
+script:
+  - sonar-scanner
